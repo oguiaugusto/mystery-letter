@@ -1,5 +1,7 @@
 const body = document.querySelector('body');
 const generatedLetter = document.getElementById('carta-gerada');
+const countedWords = document.getElementById('carta-contador');
+const typeWord = document.getElementById('type-word');
 
 const styleClasses = ['newspaper', 'magazine1', 'magazine2'];
 const sizeClasses = ['medium', 'big', 'reallybig'];
@@ -49,6 +51,16 @@ function removeClasses(element) {
   element.removeAttribute('class');
 }
 
+function wordCounter() {
+  const allWords = document.getElementsByTagName('span');
+  countedWords.innerText = `${allWords.length}`;
+  if (allWords.length === 1) {
+    typeWord.innerText = ' palavra';
+  } else {
+    typeWord.innerText = ' palavras';
+  }
+}
+
 function removeOldLetter() {
   while (generatedLetter.firstChild) {
     const toRemove = generatedLetter.firstChild;
@@ -73,6 +85,7 @@ function generateLetter() {
       generatedLetter.appendChild(word);
     }
   }
+  wordCounter();
 }
 
 function changeWordClass(event) {

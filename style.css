@@ -101,3 +101,11 @@ main {
 .skewright {
   transform: skewX(-10deg);
 }
+
+#word-counter {
+  margin-top: 30px;
+}
+
+#word-counter p {
+  display: inline;
+}
