@@ -30,3 +30,19 @@ main {
   border: 1px solid black;
   outline: none;
 }
+
+#criar-carta {
+  padding: 5px 10px;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+#criar-carta:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(235, 235, 235);
+}
+
+#criar-carta:active {
+  background-color: rgb(22, 22, 22);
+}
