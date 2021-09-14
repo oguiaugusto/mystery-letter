@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Urbanist, sans-serif;
+  width: max-content;
+  margin: 20px auto;
+  text-align: center;
+  font-size: xx-large;
+  background-color: rgb(190, 91, 91);
+}
+
+main {
+  padding: 20px 30px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+}
+
+#carta-texto {
+  width: 500px;
+  height: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 8px;
+}
+
+#carta-texto:focus {
+  border: 1px solid black;
+  outline: none;
+}
